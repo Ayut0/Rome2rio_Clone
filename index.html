@@ -5,9 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rome2rio_clone</title>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/2eade893e9.js" crossorigin="anonymous"></script>
+
+    <!-- css -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="global-container">
+        <main>
+            <section class="topContent">
+                <div class="topContent__container">
+                    <section class="header">
+                        <span>Rome2rio</span>
+                    </section>
+                    <div class="topContent__container-title">
+                        <h1>Rome2rio</h1>
+                        <span>Discover how to get anywhere by plane, train, bus, ferry & car</span>
+                    </div>
+                    <div class="topContent__container-search">
+                        <div class="search-tabs">
+                            <ul>
+                                <li id="list" class="active">Transport</li>
+                                <li id="list">Ticket</li>
+                                <li id="list">Hotels</li>
+                                <li id="list">Car Hire</li>
+                            </ul>
+                        </div>
+                        <form class="searchBar-section">
+                            <div class="search-bar">
+                                <input type="text" placeholder="Vancouver(YVR)">
+                                <div class="change"></div>
+                                <input type="text" placeholder="Los Angels(LAX)">
+                            </div>
+                            <div class="search-btn">
+                                <span class="search">
+                                    <i class="fa-solid fa-magnifying-glass" class="search-icon"></i>
+                                    <input type="submit" value="SEARCH">
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <section class="check-expedia">
+                        <input type="checkbox">
+                        <span>Search accommodation with Expedia</span>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
     <script src="./index.js"></script>
 </body>
 </html>

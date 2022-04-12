@@ -1,0 +1,134 @@
+//CSS reset
+:root{
+    margin: 0;
+    padding: 0;
+}
+
+//variables
+$cWhite : #fff;
+$cBgSearch: #25292E;
+$cBrand: #de0e7d;
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.topContent{
+    &__container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        background-image: url("./background.jpeg");
+
+        .header{
+            position: absolute;
+            top: 1em;
+            left: 6em;
+            font-size: 2em;
+            font-weight: 700;
+            color: $cWhite;
+        }
+
+        &-title{
+            color: $cWhite;
+            font-weight: bold;
+            text-align: center;
+
+            h1{
+                margin: 0;
+                font-size: 8em;
+            }
+
+            span{
+                font-size: 1.5em;
+            }
+        }
+
+        &-search{
+            margin-top: 1em;
+            width: 70%;
+            background-color: $cBgSearch;
+            border-radius: 5px;
+            height: 8.3em;
+
+            .search-tabs{
+                width: 50%;
+                ul{
+                    width: 100%;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-around;
+
+                    li{
+                        color: $cWhite;
+                        font-size: 1.2em;
+                        padding: 0.3em 0.6em;
+                        border-radius: 20px;
+
+                        &:hover{
+                            background-color: $cBrand;
+                            cursor: pointer;
+                        }
+
+                        &.active{
+                            background-color: $cBrand;
+                        }
+                    }
+                }
+            }
+
+            .searchBar-section{
+                width: 98%;
+                display: flex;
+                justify-content: space-around;
+
+                .search-bar{
+                width: 90%;
+                display: flex;
+                justify-content: center;
+
+                    input{
+                        height: 2.5em;
+                        width: 28em;
+                        border-radius: 5px;
+                    }
+                }
+
+                .search-btn{
+                    .search{
+                        input{
+                            background-color: $cBrand;
+                            color: $cWhite;
+                            padding: 0.8em 2em;
+                            border-radius: 5px;
+                            cursor: pointer;
+
+                            &:hover{
+                                background-color: #a0125e;
+                            }
+                            }
+
+                            i{
+                                color: white;
+                                position: absolute;
+                                top: 29.9em;
+                                right: 19.6em;
+                            }
+                        }
+                    }
+                }
+            }
+
+        .check-expedia{
+            width: 70%;
+
+            span{
+                color: $cWhite;
+            }
+        }
+    }
+}
+
