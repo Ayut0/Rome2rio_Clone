@@ -24,6 +24,11 @@ body {
           align-items: center;
   height: 100vh;
   background-image: url("./background.jpeg");
+  background-size: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .topContent__container .header {
@@ -113,6 +118,10 @@ body {
   border-radius: 5px;
 }
 
+.topContent__container-search .searchBar-section .search-btn .search {
+  position: relative;
+}
+
 .topContent__container-search .searchBar-section .search-btn .search input {
   background-color: #de0e7d;
   color: #fff;
@@ -128,12 +137,16 @@ body {
 .topContent__container-search .searchBar-section .search-btn .search i {
   color: white;
   position: absolute;
-  top: 29.9em;
-  right: 19.6em;
+  top: 0.1em;
+  left: 0.4em;
 }
 
 .topContent__container .check-expedia {
   width: 70%;
+}
+
+.topContent__container .check-expedia input {
+  cursor: pointer;
 }
 
 .topContent__container .check-expedia span {

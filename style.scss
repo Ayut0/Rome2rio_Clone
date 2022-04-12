@@ -22,6 +22,8 @@ body{
         align-items: center;
         height: 100vh;
         background-image: url("./background.jpeg");
+        background-size: cover;
+        user-select: none;
 
         .header{
             position: absolute;
@@ -99,6 +101,7 @@ body{
 
                 .search-btn{
                     .search{
+                        position: relative;
                         input{
                             background-color: $cBrand;
                             color: $cWhite;
@@ -114,8 +117,8 @@ body{
                             i{
                                 color: white;
                                 position: absolute;
-                                top: 29.9em;
-                                right: 19.6em;
+                                top: 0.1em;
+                                left: 0.4em;
                             }
                         }
                     }
@@ -124,6 +127,10 @@ body{
 
         .check-expedia{
             width: 70%;
+
+            input{
+                cursor: pointer;
+            }
 
             span{
                 color: $cWhite;
